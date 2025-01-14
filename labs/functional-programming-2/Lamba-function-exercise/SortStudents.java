@@ -1,9 +1,10 @@
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
 import java.util.function.Supplier;
 
-public class StudentSupplierExample {
+public class SortStudents {
     public static void main(String[] args) {
         ArrayList<Student> list = new ArrayList<>(Arrays.asList(
                 new Student(1, "Tom", "male", 20),
@@ -13,13 +14,10 @@ public class StudentSupplierExample {
                 new Student(1, "Bob", "male", 23)
         ));
 
-        Supplier<List<Student>> supplier = new Supplier<List<Student>>() {
-            @Override
-            public List<Student> get() {
-                return list;
-            }
-        };
+        // Comparator sorting
+        System.out.println(list.stream().sorted(Comparator.comparing(Student::getName)).toList());
 
-        System.out.println(supplier.get());
+        // Lambda expression sorting
+        System.out.println(list.stream().sorted((a, b) -> a.getName().compareTo(b.getName())).toList());
     }
 }
