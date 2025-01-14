@@ -2,12 +2,11 @@ package Comparator;
 
 import java.util.ArrayList;
 import java.util.Comparator;
-import java.util.function.Consumer;
 
 public class ComparatorExampleWithoutLambda {
     public static void main(String[] args) {
 
-       //create a few dummy employee records and put them in a simple ArrayList instance.
+        //create a few dummy employee records and put them in a simple ArrayList instance.
         Employee employee1 = new Employee(2, "A", "F", 18);
         Employee employee2 = new Employee(3, "z", "P", 20);
         Employee employee3 = new Employee(5, "c", "G", 17);
@@ -31,8 +30,8 @@ public class ComparatorExampleWithoutLambda {
         });
 
         //display the sorted list
-        for(Employee e: employees)
-        System.out.println(e);
+        for (Employee e : employees)
+            System.out.println(e);
     }
 }
 

@@ -6,7 +6,7 @@ public class Employee {
     private String lastName;
     private Integer age;
 
-    public Employee(Integer id, String firstName, String lastName, Integer age){
+    public Employee(Integer id, String firstName, String lastName, Integer age) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -49,6 +49,6 @@ public class Employee {
 
     @Override
     public String toString() {
-        return "\n["+this.id+","+this.firstName+","+this.lastName+","+this.age+"]";
+        return "\n[" + this.id + "," + this.firstName + "," + this.lastName + "," + this.age + "]";
     }
 }

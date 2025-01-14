@@ -1,7 +1,6 @@
 package Comparator;
 
 import java.util.ArrayList;
-import java.util.Comparator;
 
 public class ComparatorExampleWithLambda {
     public static void main(String[] args) {
@@ -25,7 +24,7 @@ public class ComparatorExampleWithLambda {
         employees.sort(
                 (o1, o2) -> o1.getFirstName().compareTo(o2.getFirstName()));
 
-        for(Employee e: employees)
+        for (Employee e : employees)
             System.out.println(e);
     }
 }

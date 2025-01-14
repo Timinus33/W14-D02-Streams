@@ -1,8 +1,7 @@
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
-        import java.util.function.Predicate;
+import java.util.function.Predicate;
 
 class BiggerThanFive<E> implements Predicate<Integer> {
 
